@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { closeMenu } from '../utils/appSlice.js';
 import {useSearchParams} from "react-router-dom";
+import CommentContainer from './CommentContainer.js';
 
 const WatchPage = () => {
   const [searchParams] = useSearchParams();
@@ -26,6 +27,7 @@ const WatchPage = () => {
           </iframe>
         </div>
       </div>
+      <CommentContainer/>
     </div>
   )
 }
